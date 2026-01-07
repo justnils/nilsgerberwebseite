@@ -50,17 +50,31 @@ const refresh = () => {
   refreshTimeoutRef.value = window.setTimeout(refresh, refreshDuration);
 };
 
+const updateSize = () => {
+  const svgElement = svgRef.value?.querySelector("svg");
+  if (svgElement) {
+    // Use document height for full page coverage
+    const fullWidth = Math.max(window.innerWidth, document.documentElement.scrollWidth, document.body.scrollWidth);
+    const fullHeight = Math.max(window.innerHeight, document.documentElement.scrollHeight, document.body.scrollHeight);
+    svgElement.setAttribute("width", fullWidth.toString());
+    svgElement.setAttribute("height", fullHeight.toString());
+  }
+};
+
 onMounted(() => {
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svg.setAttribute("width", window.outerWidth.toString());
-  svg.setAttribute("height", window.outerHeight.toString());
+  // Use document height for full page coverage
+  const fullWidth = Math.max(window.innerWidth, document.documentElement.scrollWidth);
+  const fullHeight = Math.max(window.innerHeight, document.documentElement.scrollHeight);
+  svg.setAttribute("width", fullWidth.toString());
+  svg.setAttribute("height", fullHeight.toString());
   svgRef.value?.appendChild(svg);
 
-  const unitSize = (window.innerWidth + window.innerHeight) / 15;
-  numPointsXRef.value = Math.ceil(window.innerWidth / unitSize) + 1;
-  numPointsYRef.value = Math.ceil(window.innerHeight / unitSize) + 1;
-  unitWidthRef.value = Math.ceil(window.innerWidth / (numPointsXRef.value - 1));
-  unitHeightRef.value = Math.ceil(window.innerHeight / (numPointsYRef.value - 1));
+  const unitSize = (fullWidth + fullHeight) / 15;
+  numPointsXRef.value = Math.ceil(fullWidth / unitSize) + 1;
+  numPointsYRef.value = Math.ceil(fullHeight / unitSize) + 1;
+  unitWidthRef.value = Math.ceil(fullWidth / (numPointsXRef.value - 1));
+  unitHeightRef.value = Math.ceil(fullHeight / (numPointsYRef.value - 1));
 
   for (let y = 0; y < numPointsYRef.value; y++) {
     for (let x = 0; x < numPointsXRef.value; x++) {
@@ -130,10 +144,36 @@ onMounted(() => {
 
   refresh();
 
+  // Update size on scroll and resize
+  const handleResize = () => updateSize();
+  const handleScroll = () => updateSize();
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("scroll", handleScroll);
+  
+  // Use MutationObserver to watch for DOM changes that might affect page height
+  const observer = new MutationObserver(() => {
+    updateSize();
+  });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style", "class"]
+  });
+  
+  // Also update after delays to catch dynamic content
+  const timeout1 = setTimeout(updateSize, 500);
+  const timeout2 = setTimeout(updateSize, 2000);
+
   onUnmounted(() => {
     if (refreshTimeoutRef.value !== null) {
       clearTimeout(refreshTimeoutRef.value);
     }
+    clearTimeout(timeout1);
+    clearTimeout(timeout2);
+    window.removeEventListener("resize", handleResize);
+    window.removeEventListener("scroll", handleScroll);
+    observer.disconnect();
   });
 });
 </script>
@@ -145,12 +185,20 @@ onMounted(() => {
 <style lang="scss">
 #bg {
   position: fixed;
-  background: cover;
-  width: auto;
-  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   opacity: 0.25;
   z-index: -2;
+  pointer-events: none;
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 }
 </style>
