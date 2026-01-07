@@ -70,7 +70,7 @@ onMounted(() => {
   svg.setAttribute("height", fullHeight.toString());
   svgRef.value?.appendChild(svg);
 
-  const unitSize = (fullWidth + fullHeight) / 15;
+  const unitSize = (fullWidth + fullHeight) / 60;
   numPointsXRef.value = Math.ceil(fullWidth / unitSize) + 1;
   numPointsYRef.value = Math.ceil(fullHeight / unitSize) + 1;
   unitWidthRef.value = Math.ceil(fullWidth / (numPointsXRef.value - 1));

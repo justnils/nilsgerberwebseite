@@ -4,6 +4,15 @@ export default defineEventHandler(async (event) => {
 
   const { name, company, email, message } = body;
 
+  // Check if Brevo API key is configured
+  if (!config.brevoApiKey) {
+    console.error("Brevo API Key is not configured. Please set BREVO_API_KEY environment variable.");
+    throw createError({
+      statusCode: 500,
+      statusMessage: "E-Mail-Service ist nicht konfiguriert. Bitte kontaktiere kontakt@nils-gerber.de direkt.",
+    });
+  }
+
   // Brevo API endpoint
   const brevoUrl = "https://api.brevo.com/v3/smtp/email";
 
@@ -59,9 +68,19 @@ ${message || "Keine Nachricht angegeben"}
     return { success: true, message: "E-Mail erfolgreich gesendet" };
   } catch (error: any) {
     console.error("Brevo API Error:", error);
+    
+    // Check if it's an authentication error
+    if (error.statusCode === 401 || error.status === 401) {
+      console.error("Brevo API Key is invalid or expired");
+      throw createError({
+        statusCode: 500,
+        statusMessage: "E-Mail-Service ist nicht konfiguriert. Bitte kontaktiere kontakt@nils-gerber.de direkt.",
+      });
+    }
+    
     throw createError({
       statusCode: 500,
-      statusMessage: "Fehler beim Senden der E-Mail",
+      statusMessage: "Fehler beim Senden der E-Mail. Bitte versuche es erneut oder schreibe direkt an kontakt@nils-gerber.de",
     });
   }
 });
