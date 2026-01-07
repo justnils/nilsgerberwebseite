@@ -1,5 +1,8 @@
 {
-  "name": "nuxt-app",
+  "name": "nilsgerberwebseite",
+  "version": "1.0.0",
+  "description": "Personal website of Nils Gerber",
+  "author": "Nils Gerber <justnils@users.noreply.github.com>",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,7 +16,7 @@
     "@emailjs/browser": "^4.4.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@vueuse/nuxt": "^11.3.0",
-    "apexcharts": "^4.0.0",
+    "apexcharts": "3.49.2",
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.5",
     "nuxt": "^3.14.1592",

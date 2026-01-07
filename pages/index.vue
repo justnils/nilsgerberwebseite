@@ -10,71 +10,58 @@ const closeNav = () => {
 <template>
   <Header :nav-open="navOpen" :toggle-nav="toggleNav" />
   <Navigation :nav-open="navOpen" :close-nav="closeNav" />
-  
-  <!-- Triangle Background -->
-  <TriangleBg />
 
   <main class="container-fluid">
     <div class="row gx-xxl-6">
       <div class="col col-xl-9" data-bs-spy="scroll" data-bs-target="#navigation">
-        <!-- Hero -->
         <Hero />
-        
-        <!-- Hero Photo (lachendes Foto) -->
-        <HeroPhoto />
-        
-        <!-- Value Proposition -->
-        <ValueProposition />
-        
-        <!-- Vertrauensanker -->
         <AboutMe />
-        
-        <!-- Für wen ich arbeite -->
-        <ClientOnly>
-          <TargetAudience />
-        </ClientOnly>
-        
-        <!-- Was du mit mir erreichst -->
-        <ClientOnly>
-          <Outcomes />
-        </ClientOnly>
-        
-        <!-- Leistungen -->
         <Services />
-        
-        <!-- So arbeite ich -->
+        <!-- Attainments -->
+        <section id="attainments" class="attainments section position-relative">
+          <ClientOnly>
+            <Attainments />
+          </ClientOnly>
+        </section>
+        <!-- Fun facts -->
+        <section id="fun_facts" class="fun_facts section">
+          <ClientOnly>
+            <FunFacts />
+          </ClientOnly>
+        </section>
+        <!-- Experience -->
+        <section id="experience" class="experience section position-relative">
+          <ClientOnly>
+            <Experience />
+          </ClientOnly>
+        </section>
+        <!-- Projects -->
+        <section id="projects" class="projects section position-relative">
+          <ClientOnly>
+            <Projects />
+          </ClientOnly>
+        </section>
+        <!-- How I Work -->
         <section id="how_i_work" class="how-i-work section position-relative">
           <ClientOnly>
             <HowIWork />
           </ClientOnly>
         </section>
-        
-        <!-- Prinzipien -->
-        <ClientOnly>
-          <Principles />
-        </ClientOnly>
-        
-        <!-- Über mich -->
-        <ClientOnly>
-          <AboutMeDetailed />
-        </ClientOnly>
-        
-        <!-- FAQ -->
-        <ClientOnly>
-          <FAQ />
-        </ClientOnly>
-        
-        <!-- Kontakt -->
+        <!-- Blogs -->
+        <Blogs />
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials section position-relative">
+          <ClientOnly>
+            <Testimonials />
+          </ClientOnly>
+        </section>
+        <!-- Contact -->
         <section id="contact" class="contact section position-relative">
           <ClientOnly>
             <Contact />
           </ClientOnly>
         </section>
-        
-        <!-- Footer -->
-        <Footer />
       </div>
     </div>
   </main>
 </template>
-
