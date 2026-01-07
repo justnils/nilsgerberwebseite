@@ -3,7 +3,7 @@ REM Git Setup Script für nilsgerberwebseite
 
 REM Configure git author
 git config user.name "Nils Gerber"
-git config user.email "justnils@users.noreply.github.com"
+git config user.email "justnils@gmx.de"
 
 echo # nilsgerberwebseite > README.md
 git init
