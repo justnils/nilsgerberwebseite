@@ -58,9 +58,11 @@ onMounted(() => {
       <div class="col-12 col-lg-5 col-xl-4">
         <div class="hero-photo-cutout">
           <img 
-            src="/images/Nils_Gerber_Alsdorf_bei_aachen.png" 
+            src="/images/Nils_Gerber_Alsdorf_bei_aachen.webp" 
             alt="Nils Gerber, KI-Berater und Head of AI aus Alsdorf bei Aachen" 
             class="cutout-image"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>

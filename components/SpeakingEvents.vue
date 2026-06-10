@@ -5,9 +5,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const speakingImages = [
-  { src: "/images/NilsGerber Public Speaking.jpg", alt: "Nils Gerber bei einem Vortrag" },
-  { src: "/images/NilsGerber_bei_der_BARC.jpg", alt: "Nils Gerber bei der BARC" },
-  { src: "/images/NilsGerberEvent.jpg", alt: "Nils Gerber auf einem Event" },
+  { src: "/images/NilsGerberPublicSpeaking.webp", alt: "Nils Gerber bei einem Vortrag" },
+  { src: "/images/NilsGerber_bei_der_BARC.webp", alt: "Nils Gerber bei der BARC" },
+  { src: "/images/NilsGerberEvent.webp", alt: "Nils Gerber auf einem Event" },
 ];
 
 onMounted(() => {
@@ -34,7 +34,7 @@ onMounted(() => {
     <div class="row g-3">
       <div v-for="(image, index) in speakingImages" :key="index" class="col-12 col-md-4">
         <div class="speaking-image-wrapper">
-          <img :src="image.src" :alt="image.alt" class="speaking-image" />
+          <img :src="image.src" :alt="image.alt" class="speaking-image" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>

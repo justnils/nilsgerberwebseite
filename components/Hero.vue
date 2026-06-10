@@ -55,7 +55,7 @@ onMounted(() => {
             <span></span>
             <span></span>
           </div>
-          <img class="img-fluid rounded-circle hero-img" src="/images/hero.png" alt="Nils Gerber" />
+          <img class="img-fluid rounded-circle hero-img" src="/images/hero.webp" alt="Nils Gerber, KI-Berater aus Alsdorf bei Aachen" fetchpriority="high" />
           <div class="waves-bottom">
             <span></span>
             <span></span>

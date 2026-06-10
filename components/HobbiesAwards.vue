@@ -50,7 +50,7 @@ onMounted(() => {
               </a>
             </div>
             <div class="hobby-image-wrapper mt-3">
-              <img src="/images/NilsGerberCropZoneGruender.png" alt="Nils Gerber, Mitgründer des AgrarTech-Startups CROP.ZONE aus Aachen" />
+              <img src="/images/NilsGerberCropZoneGruender.webp" alt="Nils Gerber, Mitgründer des AgrarTech-Startups CROP.ZONE aus Aachen" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ onMounted(() => {
               </a>
             </div>
             <div class="award-image-wrapper mt-3">
-              <img src="/images/NilsGerberDigitalPioneer2019.gif" alt="Nils Gerber bei der digitalPIONEER 2019 Preisverleihung des digitalHUB Aachen" />
+              <img src="/images/NilsGerberDigitalPioneer2019.gif" alt="Nils Gerber bei der digitalPIONEER 2019 Preisverleihung des digitalHUB Aachen" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@ onMounted(() => {
               </a>
             </div>
             <div class="hobby-image-wrapper mt-3">
-              <img src="/images/NIlsGerberMaisfeldAlsdorfBeiAachen.jpg" alt="Nils Gerber am Maisfeldlabyrinth" />
+              <img src="/images/NIlsGerberMaisfeldAlsdorfBeiAachen.webp" alt="Nils Gerber am Maisfeldlabyrinth" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@ onMounted(() => {
               </a>
             </div>
             <div class="hobby-image-wrapper mt-3">
-              <img src="/images/NilsGerberSpeakerBarcDataAiSummit.png" alt="Nils Gerber als Speaker auf dem BARC Data und AI Summit mit dem Vortrag Aus dem Maschinenraum" />
+              <img src="/images/NilsGerberSpeakerBarcDataAiSummit.webp" alt="Nils Gerber als Speaker auf dem BARC Data und AI Summit mit dem Vortrag Aus dem Maschinenraum" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
