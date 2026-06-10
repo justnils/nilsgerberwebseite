@@ -15,6 +15,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@vercel/speed-insights": "^2.0.0",
     "@vueuse/nuxt": "^11.3.0",
     "apexcharts": "3.49.2",
     "bootstrap": "^5.3.3",
