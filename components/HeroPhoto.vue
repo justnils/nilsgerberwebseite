@@ -59,7 +59,7 @@ onMounted(() => {
         <div class="hero-photo-cutout">
           <img 
             src="/images/Nils_Gerber_Alsdorf_bei_aachen.png" 
-            alt="Nils Gerber" 
+            alt="Nils Gerber, KI-Berater und Head of AI aus Alsdorf bei Aachen" 
             class="cutout-image"
           />
         </div>

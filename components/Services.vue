@@ -60,10 +60,8 @@ const containerRef = ref(null);
   <section id="services" class="services section position-relative">
     <!-- Overlay Text -->
     <!-- Section Title -->
-    <ClientOnly>
-      <SectionOverlayText text="Leistungen" />
-      <SectionTitle subtitle="Was ich anbiete" title="Einstieg klein, Wirkung groß, Skalierung möglich." />
-    </ClientOnly>
+    <SectionOverlayText text="Leistungen" />
+    <SectionTitle subtitle="Was ich anbiete" title="Einstieg klein, Wirkung groß, Skalierung möglich." />
 
     <p class="services-intro mb-5">
       Du kannst klein starten und sauber wachsen. Mein Ziel ist immer: schnelle Wirkung, dann kontrollierte Skalierung.

@@ -21,10 +21,8 @@ onMounted(() => {
 
 <template>
   <section id="about_me" class="about-detailed-section section position-relative">
-    <ClientOnly>
-      <SectionOverlayText text="Über mich" />
-      <SectionTitle subtitle="Wer ich bin" title="Ich bin Nils Gerber. Head of AI, Berater, Gründer." />
-    </ClientOnly>
+    <SectionOverlayText text="Über mich" />
+    <SectionTitle subtitle="Wer ich bin" title="Ich bin Nils Gerber. Head of AI, Berater, Gründer." />
 
     <div class="row align-items-center">
       <!-- Profile Image -->

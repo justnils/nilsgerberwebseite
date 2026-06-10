@@ -22,6 +22,20 @@ const isCaptchaValid = computed(() => captchaAnswer.value.trim() === correctCapt
 const submitBtn = ref("Senden");
 const submitError = ref("");
 
+// Success popup
+const showSuccessPopup = ref(false);
+let popupTimer: ReturnType<typeof setTimeout> | null = null;
+
+const closePopup = () => {
+  showSuccessPopup.value = false;
+  if (popupTimer) clearTimeout(popupTimer);
+};
+
+const openPopup = () => {
+  showSuccessPopup.value = true;
+  popupTimer = setTimeout(closePopup, 5000);
+};
+
 // Handle form submission via Brevo API
 const form = ref<HTMLFormElement | null>(null);
 const handleSubmit = async () => {
@@ -41,10 +55,9 @@ const handleSubmit = async () => {
     
     console.log("SUCCESS!", response);
     formData.value = { name: "", company: "", email: "", message: "" };
-    submitBtn.value = "Gesendet!";
-    setTimeout(() => {
-      submitBtn.value = "Senden";
-    }, 3000);
+    captchaAnswer.value = "";
+    submitBtn.value = "Senden";
+    openPopup();
   } catch (error: any) {
     console.log("FAILED...", error);
     submitBtn.value = "Fehler!";
@@ -129,11 +142,23 @@ onMounted(() => {
           <a href="mailto:kontakt@nils-gerber.de">kontakt@nils-gerber.de</a>
         </div>
       </div>
-      <div class="col-sm-6 col-xl-4 col-xxl-3 d-flex align-items-center">
-        <div class="d-flex gap-3 social-icons">
-          <a href="https://www.linkedin.com/in/nils-gerber/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-            <PhosphorIconLinkedinLogo :size="24" />
-          </a>
+      <div class="col-sm-12 col-xl-4 col-xxl-6 d-flex align-items-center">
+        <div class="social-block">
+          <span class="contact-label">Finde mich auch unter</span>
+          <div class="d-flex gap-3 social-icons">
+            <a href="https://de.linkedin.com/in/nils-gerber" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <PhosphorIconLinkedinLogo :size="24" />
+            </a>
+            <a href="https://www.instagram.com/justnils/" target="_blank" rel="noopener noreferrer" title="Instagram">
+              <PhosphorIconInstagramLogo :size="24" />
+            </a>
+            <a href="https://www.facebook.com/justnils" target="_blank" rel="noopener noreferrer" title="Facebook">
+              <PhosphorIconFacebookLogo :size="24" />
+            </a>
+            <a href="https://x.com/justnils888" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
+              <PhosphorIconXLogo :size="24" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -214,6 +239,24 @@ onMounted(() => {
   <div class="col mt-5 pt-5 next-chapter">
     <span class="page">Ende</span>
   </div>
+
+  <Teleport to="body">
+    <Transition name="toast">
+      <div v-if="showSuccessPopup" class="success-toast" role="status" @click="closePopup">
+        <div class="toast-icon">
+          <PhosphorIconCheckCircle :size="32" weight="fill" />
+        </div>
+        <div class="toast-content">
+          <strong>Danke!</strong>
+          <span>Wir haben deine Nachricht erhalten und melden uns zeitnah.</span>
+        </div>
+        <button class="toast-close" aria-label="Schließen" @click.stop="closePopup">
+          <PhosphorIconX :size="18" />
+        </button>
+        <div class="toast-progress"></div>
+      </div>
+    </Transition>
+  </Teleport>
 </template>
 
 <style lang="scss">
@@ -278,6 +321,14 @@ onMounted(() => {
         font-size: 20px;
       }
       font-weight: 500;
+    }
+  }
+  .social-block {
+    .contact-label {
+      display: block;
+      font-size: 14px;
+      opacity: 0.7;
+      margin-bottom: 12px;
     }
   }
   .social-icons {
@@ -461,17 +512,17 @@ onMounted(() => {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
-    
+
     &.btn-disabled {
       opacity: 0.4;
       cursor: not-allowed;
-      
+
       &:hover {
         background-color: transparent;
         color: inherit;
       }
     }
-    
+
     &:hover:not(.btn-disabled) {
       background-color: #000;
       color: white;
@@ -484,5 +535,91 @@ onMounted(() => {
       }
     }
   }
+}
+
+.success-toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 48px 18px 20px;
+  background: rgb(var(--white));
+  color: rgb(var(--black));
+  border: 1px solid rgb(var(--black));
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  max-width: min(440px, calc(100vw - 32px));
+  cursor: pointer;
+  overflow: hidden;
+
+  .toast-icon {
+    color: #22c55e;
+    flex-shrink: 0;
+    display: flex;
+  }
+
+  .toast-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    strong {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    span {
+      font-size: 14px;
+      opacity: 0.75;
+      line-height: 1.5;
+    }
+  }
+
+  .toast-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    display: flex;
+    padding: 4px;
+    color: inherit;
+    transition: opacity 0.2s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: rgb(var(--black));
+    animation: toast-countdown 5s linear forwards;
+  }
+}
+
+@keyframes toast-countdown {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+.toast-enter-active,
+.toast-leave-active {
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.toast-enter-from,
+.toast-leave-to {
+  opacity: 0;
+  transform: translateX(-50%) translateY(24px);
 }
 </style>

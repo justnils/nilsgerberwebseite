@@ -30,45 +30,31 @@ const closeNav = () => {
         <AboutMe />
         
         <!-- Für wen ich arbeite -->
-        <ClientOnly>
-          <TargetAudience />
-        </ClientOnly>
+        <TargetAudience />
         
         <!-- Was du mit mir erreichst -->
-        <ClientOnly>
-          <Outcomes />
-        </ClientOnly>
+        <Outcomes />
         
         <!-- Leistungen -->
         <Services />
         
         <!-- So arbeite ich -->
         <section id="how_i_work" class="how-i-work section position-relative">
-          <ClientOnly>
-            <HowIWork />
-          </ClientOnly>
+          <HowIWork />
         </section>
         
         <!-- Prinzipien -->
-        <ClientOnly>
-          <Principles />
-        </ClientOnly>
+        <Principles />
         
         <!-- Über mich -->
-        <ClientOnly>
-          <AboutMeDetailed />
-        </ClientOnly>
+        <AboutMeDetailed />
         
         <!-- FAQ -->
-        <ClientOnly>
-          <FAQ />
-        </ClientOnly>
+        <FAQ />
         
         <!-- Kontakt -->
         <section id="contact" class="contact section position-relative">
-          <ClientOnly>
-            <Contact />
-          </ClientOnly>
+          <Contact />
         </section>
         
         <!-- Footer -->

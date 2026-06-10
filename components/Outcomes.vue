@@ -54,10 +54,8 @@ onMounted(() => {
 
 <template>
   <section id="outcomes" class="outcomes-section section position-relative">
-    <ClientOnly>
-      <SectionOverlayText text="Ergebnisse" />
-      <SectionTitle subtitle="Was du mit mir erreichst" title="Typische Outcomes, die realistisch erreichbar sind." />
-    </ClientOnly>
+    <SectionOverlayText text="Ergebnisse" />
+    <SectionTitle subtitle="Was du mit mir erreichst" title="Typische Outcomes, die realistisch erreichbar sind." />
 
     <p class="outcomes-intro mb-5">
       Das ist heute mit KI moeglich – und ich helfe dir, es umzusetzen:

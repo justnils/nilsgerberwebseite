@@ -1,0 +1,139 @@
+# Nils Gerber – KI-Berater und Head of AI (Volltext)
+
+> Vollstaendiger Inhalt der Website https://www.nils-gerber.de als Markdown. Nils Gerber ist KI-Berater und Head of AI aus Alsdorf bei Aachen (NRW, Deutschland). Er hilft Unternehmen und Kommunen, KI pragmatisch und sicher produktiv zu machen. Schwerpunkte: Large Language Models (LLMs), RAG-Systeme, KI-Agenten.
+
+## Identitaet
+
+- **Name:** Nils Gerber
+- **Rolle:** KI-Berater, Head of AI, strategischer Sparringspartner
+- **Standort:** Alsdorf bei Aachen, Nordrhein-Westfalen, Deutschland
+- **Taetigkeitsgebiet:** Aachen, Koeln, Duesseldorf, NRW, Deutschland (remote)
+- **E-Mail:** kontakt@nils-gerber.de
+- **Website:** https://www.nils-gerber.de
+
+## Ueber Nils Gerber
+
+Nils Gerber ist unternehmerisch gepraegter KI-Berater mit langjaehriger Erfahrung in IT, Software, Daten und Automatisierung. Er hat eine KI-Division aufgebaut und geleitet (Head of AI) und verbindet Technik, Strategie und Entscheidungsfindung. Sein Ansatz: operative Umsetzung statt theoretischer Beratung.
+
+Als Mitgruender und CIO baute er das Aachener AgrarTech-Startup CROP.ZONE mit auf – ein RWTH-Spin-off fuer nachhaltige Unkrautbekaempfung ohne Chemie. Das Startup sammelte 11 Millionen US-Dollar Eigenkapital ein, erhielt 800.000 Euro Foerderung vom Bundeslandwirtschaftsministerium (BMEL) und wuchs auf fast 30 Mitarbeitende. 2019 wurde Nils Gerber vom digitalHUB Aachen als Digital Pioneer ausgezeichnet.
+
+Als Speaker steht Nils Gerber regelmaessig auf der Buehne, unter anderem auf dem BARC Data & AI Summit, einer der wichtigsten Data- und KI-Konferenzen im DACH-Raum. Sein Vortrag "Aus dem Maschinenraum - Wie KI wirklich arbeitet, wenn man sie arbeiten laesst" behandelt, wie sich Arbeit, Denken und Organisation veraendern, wenn Maschinen Sprache verstehen - statt Technik-Showcase geht es um Haltung, Klarheit und den Sprung von Faszination zu echter Umsetzung.
+
+Privat betreibt er seit Jahren das beliebte Monster-Maisfeldlabyrinth in Alsdorf bei Aachen (https://monster-maisfeldlabyrinth-alsdorf.de), ueber das auch die Aachener Zeitung berichtete.
+
+Grundhaltung: KI ist kein Tool-Problem, sondern ein Struktur-, Fuehrungs- und Entscheidungsproblem. Ziel ist Wirkung, Umsetzbarkeit und Klarheit.
+
+## Fachliche Schwerpunkte
+
+- Large Language Models (LLMs)
+- Retrieval Augmented Generation (RAG)
+- KI-Agenten und Agenten-Architekturen
+- Automatisierung wissensbasierter Prozesse
+- Interne KI-Systeme fuer Unternehmen
+
+## Leistungen
+
+Einstieg klein, Wirkung gross, Skalierung moeglich. Man kann klein starten und sauber wachsen: schnelle Wirkung, dann kontrollierte Skalierung.
+
+### 1. KI-Kickstart Workshop (1 Tag)
+
+Ergebnis: Priorisierte Use Cases, klare Roadmap, realistische Umsetzungsschritte.
+
+### 2. Proof of Concept / Pilot (2-4 Wochen)
+
+Ergebnis: Ein konkreter Use Case als funktionierender Pilot, inklusive Bewertung, Risiken und Daten-Check.
+
+### 3. Sparring (monatlich)
+
+Ergebnis: Schnellere Entscheidungen, klare Prioritaeten, weniger Tool-Chaos.
+
+### 4. Enablement & Schulungen (nach Bedarf)
+
+Ergebnis: Das Team versteht KI, arbeitet sauberer und produziert verlaesslichere Ergebnisse.
+
+### 5. Transformationsprojekte (6-12 Wochen+)
+
+Ergebnis: Mehrere Use Cases, stabile Architektur, Governance, Rollout und Betrieb.
+
+## Zielgruppe
+
+Fuer Entscheider, die KI nicht "einfuehren", sondern nutzen wollen. Ziel ist, dass KI messbar Zeit spart, Qualitaet erhoeht oder Service verbessert.
+
+- **Geschaeftsfuehrung:** Prioritaeten, Business Value, Roadmap, Umsetzung in die Organisation
+- **IT-Leitung:** Sichere Architektur, Integration, Betrieb, Governance
+- **Fachbereiche:** Konkrete Use Cases, weniger Reibung, schnelle Entlastung
+- **Kommunen:** Quick Wins, spuerbare Entlastung, realistisch umsetzbar
+
+## Arbeitsprinzipien
+
+1. Wirkung vor Demo
+2. Pilot vor Rollout
+3. Datenzugriff und Berechtigungen zuerst
+4. Qualitaet messbar machen statt "fuehlt sich gut an"
+5. Menschen mitnehmen, sonst stirbt jedes System
+6. Sicherheit und DSGVO pragmatisch loesen, nicht als Ausrede nutzen
+
+Gegenversprechen: Keine Buzzword-Folien, kein Bullshit, keine Experimente ohne Ziel. Es werden Dinge gebaut, die genutzt werden.
+
+## Klare Abgrenzung
+
+Nils Gerber bietet:
+
+- Keine Buzzword-Beratung
+- Keine reinen Tool-Demos
+- Keine PowerPoint-Beratung
+- Kein Prompt-Coaching
+- Keinen KI-Hype
+
+Stattdessen: Operative Umsetzung mit messbarer Wirkung.
+
+## Haeufige Fragen (FAQ)
+
+### Wer ist Nils Gerber?
+
+Nils Gerber ist KI-Berater und Head of AI aus Alsdorf bei Aachen, Nordrhein-Westfalen. Er hilft Unternehmen und Kommunen in NRW und deutschlandweit, KI pragmatisch und sicher produktiv zu machen. Schwerpunkte: Large Language Models (LLMs), RAG-Systeme, KI-Agenten. Operative Umsetzung statt Buzzword-Beratung.
+
+### Was macht ein KI-Berater?
+
+Ein KI-Berater wie Nils Gerber hilft Unternehmen, die richtigen KI-Use-Cases zu identifizieren, Piloten zu entwickeln und KI-Systeme in den Alltag zu integrieren. Das umfasst Strategie, Architektur, Implementierung und Schulung – immer mit Fokus auf messbare Wirkung.
+
+### Was ist der Unterschied zwischen KI-Beratung und klassischer IT-Beratung?
+
+KI-Beratung fokussiert sich auf den Einsatz von Machine Learning, Large Language Models und intelligenter Automatisierung. Es geht nicht nur um Technik, sondern auch um Datenqualitaet, Change Management und den sinnvollen Einsatz von KI – nicht um Hype.
+
+### Wie starten wir, wenn wir noch keine Use Cases haben?
+
+Mit einem Kickstart-Workshop. In einem Tag werden priorisierte Use Cases identifiziert, Machbarkeit bewertet und eine realistische Roadmap erstellt. Danach ist klar, was sinnvoll ist, was Daten braucht und was schnell Wirkung bringt.
+
+### Was kostet KI-Beratung?
+
+Das haengt vom Umfang ab. Ein Kickstart-Workshop ist ein ueberschaubares Investment, ein Transformationsprojekt entsprechend mehr. Wichtig: Der ROI sollte klar sein, bevor gestartet wird. Im Erstgespraech wird kostenfrei geklaert, ob und wie eine Zusammenarbeit sinnvoll ist.
+
+### Ist KI-Beratung auch fuer den Mittelstand geeignet?
+
+Ja, besonders. Der Mittelstand kann mit fokussierten KI-Projekten schnell Wirkung erzielen – ohne eigene AI-Abteilung. Entscheidend ist nicht die Groesse, sondern der Wille, Dinge sauber umzusetzen und zu nutzen.
+
+### Geht das DSGVO-konform?
+
+Ja. Nils Gerber arbeitet ausschliesslich mit datenschutzkonformen Loesungen. Zugriff, Datenfluesse, Logging und Grenzen werden von Anfang an sauber definiert. Europaeische Cloud-Anbieter und lokale Modelle sind moeglich.
+
+### Wo bietet Nils Gerber KI-Beratung an?
+
+Nils Gerber ist KI-Berater in Alsdorf bei Aachen und arbeitet mit Unternehmen in Aachen, Koeln, Duesseldorf, ganz NRW und deutschlandweit (remote). Vor-Ort-Termine und Remote-Zusammenarbeit sind flexibel kombinierbar.
+
+### Was sind LLMs, RAG und KI-Agenten?
+
+LLMs (Large Language Models) sind Sprachmodelle wie GPT-4 oder Claude. RAG (Retrieval Augmented Generation) kombiniert LLMs mit Unternehmenswissen fuer praezise Antworten. KI-Agenten sind autonome Systeme, die Aufgaben eigenstaendig bearbeiten. Nils Gerber hilft bei allen drei Bereichen.
+
+## Kontakt
+
+- **E-Mail:** kontakt@nils-gerber.de
+- **Kontaktformular:** https://www.nils-gerber.de/#contact
+- **Standort:** Alsdorf bei Aachen, Nordrhein-Westfalen, Deutschland
+
+## Profile
+
+- LinkedIn: https://de.linkedin.com/in/nils-gerber
+- Instagram: https://www.instagram.com/justnils/
+- Facebook: https://www.facebook.com/justnils
+- X (Twitter): https://x.com/justnils888

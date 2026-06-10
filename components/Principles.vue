@@ -32,10 +32,8 @@ onMounted(() => {
 
 <template>
   <section id="principles" class="principles-section section position-relative">
-    <ClientOnly>
-      <SectionOverlayText text="Prinzipien" />
-      <SectionTitle subtitle="Meine Arbeitsweise" title="Meine Prinzipien, damit KI nicht als Spielerei endet." />
-    </ClientOnly>
+    <SectionOverlayText text="Prinzipien" />
+    <SectionTitle subtitle="Meine Arbeitsweise" title="Meine Prinzipien, damit KI nicht als Spielerei endet." />
 
     <div class="principles-grid row g-3 mb-5">
       <div v-for="(principle, index) in principles" :key="index" class="col-sm-6 col-lg-4">
@@ -129,6 +127,7 @@ onMounted(() => {
   }
 }
 </style>
+
 
 
 

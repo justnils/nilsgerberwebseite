@@ -2,12 +2,10 @@
 
 <template>
   <section id="trust" class="about section">
-    <ClientOnly>
-      <!-- Section Overlay -->
-      <SectionOverlayText text="Vertrauen" />
-      <!-- Section Title -->
-      <SectionTitle subtitle="Warum ich?" title="Vision ist gut. Lieferung ist besser." />
-    </ClientOnly>
+    <!-- Section Overlay -->
+    <SectionOverlayText text="Vertrauen" />
+    <!-- Section Title -->
+    <SectionTitle subtitle="Warum ich?" title="Vision ist gut. Lieferung ist besser." />
     <!-- About Content -->
     <div class="row mb-4 mb-lg-5 align-items-center">
       <!-- About Description -->

@@ -50,10 +50,8 @@ onMounted(() => {
 
 <template>
   <section id="audience" class="audience-section section position-relative">
-    <ClientOnly>
-      <SectionOverlayText text="Zielgruppe" />
-      <SectionTitle subtitle="Für wen ich arbeite" title="Für Entscheider, die KI nicht 'einführen', sondern nutzen wollen." />
-    </ClientOnly>
+    <SectionOverlayText text="Zielgruppe" />
+    <SectionTitle subtitle="Für wen ich arbeite" title="Für Entscheider, die KI nicht 'einführen', sondern nutzen wollen." />
 
     <p class="audience-intro mb-5">
       Ich arbeite mit Geschäftsführung, IT-Leitung und Fachbereichen, ebenso mit Kommunen. 
@@ -193,6 +191,7 @@ onMounted(() => {
   }
 }
 </style>
+
 
 
 

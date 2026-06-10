@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { faqs } from "~/data/faqs";
+
 // Person Schema (JSON-LD) fuer Knowledge Graph und KI-Systeme
 const personSchema = {
   "@context": "https://schema.org",
@@ -10,11 +12,20 @@ const personSchema = {
   "email": "kontakt@nils-gerber.de",
   "image": "https://www.nils-gerber.de/images/hero.png",
   "sameAs": [
-    "https://www.linkedin.com/in/nils-gerber/"
+    "https://de.linkedin.com/in/nils-gerber",
+    "https://www.instagram.com/justnils/",
+    "https://www.facebook.com/justnils",
+    "https://x.com/justnils888"
   ],
   "worksFor": {
     "@type": "Organization",
     "name": "INFORM DataLab"
+  },
+  "award": "Digital Pioneer 2019 (digitalHUB Aachen)",
+  "alumniOf": {
+    "@type": "Organization",
+    "name": "CROP.ZONE",
+    "description": "AgrarTech-Startup aus Aachen, mitgegruendet von Nils Gerber als CIO"
   },
   "address": {
     "@type": "PostalAddress",
@@ -38,6 +49,62 @@ const personSchema = {
     "Nordrhein-Westfalen",
     "Deutschland"
   ]
+};
+
+// WebSite Schema fuer Suchmaschinen und KI-Systeme
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Nils Gerber – KI-Berater",
+  "url": "https://www.nils-gerber.de",
+  "inLanguage": "de",
+  "description": "KI-Beratung fuer Mittelstand, Geschaeftsfuehrung und Kommunen in NRW und deutschlandweit. LLMs, RAG-Systeme, KI-Agenten.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Nils Gerber"
+  }
+};
+
+// ProfessionalService Schema mit Leistungskatalog
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Nils Gerber – KI-Beratung",
+  "url": "https://www.nils-gerber.de",
+  "email": "kontakt@nils-gerber.de",
+  "founder": { "@type": "Person", "name": "Nils Gerber" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Alsdorf",
+    "addressRegion": "Nordrhein-Westfalen",
+    "addressCountry": "DE"
+  },
+  "areaServed": ["Aachen", "Koeln", "Duesseldorf", "Nordrhein-Westfalen", "Deutschland"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "KI-Beratungsleistungen",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "KI-Kickstart Workshop", "description": "1 Tag: Priorisierte Use Cases, klare Roadmap, realistische Umsetzungsschritte." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Proof of Concept / Pilot", "description": "2-4 Wochen: Ein konkreter Use Case als funktionierender Pilot, inklusive Bewertung, Risiken und Daten-Check." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sparring", "description": "Monatlich: Schnellere Entscheidungen, klare Prioritaeten, weniger Tool-Chaos." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enablement und Schulungen", "description": "Nach Bedarf: Team-Befaehigung fuer sauberes Arbeiten mit KI." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transformationsprojekte", "description": "6-12 Wochen+: Mehrere Use Cases, stabile Architektur, Governance, Rollout und Betrieb." } }
+    ]
+  }
+};
+
+// FAQPage Schema: serverseitig gerendert, damit AI-Crawler (ohne JS) es lesen koennen
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer,
+    },
+  })),
 };
 
 useHead({
@@ -120,11 +187,29 @@ useHead({
       type: "application/ld+json",
       innerHTML: JSON.stringify(personSchema),
     },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify(websiteSchema),
+    },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify(serviceSchema),
+    },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify(faqSchema),
+    },
   ],
   link: [
     {
       rel: "canonical",
       href: "https://www.nils-gerber.de",
+    },
+    {
+      rel: "alternate",
+      type: "text/markdown",
+      href: "https://www.nils-gerber.de/llms.txt",
+      title: "LLM-freundliche Version",
     },
   ],
 });

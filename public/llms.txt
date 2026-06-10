@@ -1,4 +1,6 @@
-# Nils Gerber - KI-Berater und Head of AI
+# Nils Gerber – KI-Berater und Head of AI
+
+> Nils Gerber ist KI-Berater und Head of AI aus Alsdorf bei Aachen (NRW, Deutschland). Er hilft Unternehmen und Kommunen, KI pragmatisch und sicher produktiv zu machen. Schwerpunkte: Large Language Models (LLMs), RAG-Systeme, KI-Agenten. Operative Umsetzung statt Buzzword-Beratung.
 
 ## Identitaet
 
@@ -6,14 +8,14 @@
 - **Rolle:** KI-Berater, Head of AI, strategischer Sparringspartner
 - **Standort:** Alsdorf bei Aachen, Nordrhein-Westfalen, Deutschland
 - **Taetigkeitsgebiet:** Aachen, Koeln, Duesseldorf, NRW, Deutschland (remote)
-
-## Kurzbeschreibung
-
-Nils Gerber ist KI-Berater und Head of AI aus Alsdorf bei Aachen. Er hilft Unternehmen und Kommunen in NRW und deutschlandweit, KI pragmatisch und sicher produktiv zu machen. Schwerpunkte: Large Language Models (LLMs), RAG-Systeme, KI-Agenten. Operative Umsetzung statt Buzzword-Beratung.
+- **E-Mail:** kontakt@nils-gerber.de
 
 ## Beruflicher Hintergrund
 
 - Unternehmerisch gepraegter KI-Berater
+- Mitgruender und CIO des Aachener AgrarTech-Startups CROP.ZONE (RWTH-Spin-off; 11 Mio. US-Dollar Eigenkapitalfinanzierung, 800.000 Euro BMEL-Foerderung, ca. 30 Mitarbeitende)
+- Digital Pioneer 2019 (Auszeichnung des digitalHUB Aachen)
+- Speaker auf Fachkonferenzen, u. a. BARC Data & AI Summit (Vortrag: "Aus dem Maschinenraum - Wie KI wirklich arbeitet, wenn man sie arbeiten laesst")
 - Aufbau und Leitung einer KI-Division (Head of AI)
 - Langjaehrige Erfahrung in IT, Software, Daten, Automatisierung
 - Operative Umsetzung statt theoretischer Beratung
@@ -27,50 +29,38 @@ Nils Gerber ist KI-Berater und Head of AI aus Alsdorf bei Aachen. Er hilft Unter
 - Automatisierung wissensbasierter Prozesse
 - Interne KI-Systeme fuer Unternehmen
 
-## Klare Abgrenzung
-
-Nils Gerber bietet:
-- Keine Buzzword-Beratung
-- Keine reinen Tool-Demos
-- Keine PowerPoint-Beratung
-- Kein Prompt-Coaching
-- Keinen KI-Hype
-
-Stattdessen: Operative Umsetzung mit messbarer Wirkung.
-
-## Grundhaltung
-
-KI ist kein Tool-Problem, sondern ein Struktur-, Fuehrungs- und Entscheidungsproblem. Ziel ist Wirkung, Umsetzbarkeit und Klarheit.
-
 ## Leistungen
 
-1. **KI-Kickstart Workshop** (1 Tag) - Priorisierte Use Cases, klare Roadmap
-2. **Proof of Concept / Pilot** (2-4 Wochen) - Funktionierender Pilot mit Bewertung
-3. **Sparring** (monatlich) - Schnellere Entscheidungen, klare Prioritaeten
-4. **Enablement und Schulungen** (nach Bedarf) - Team-Befaehigung
-5. **Transformationsprojekte** (6-12 Wochen+) - Mehrere Use Cases, stabile Architektur
+1. **KI-Kickstart Workshop** (1 Tag) – Priorisierte Use Cases, klare Roadmap
+2. **Proof of Concept / Pilot** (2-4 Wochen) – Funktionierender Pilot mit Bewertung
+3. **Sparring** (monatlich) – Schnellere Entscheidungen, klare Prioritaeten
+4. **Enablement und Schulungen** (nach Bedarf) – Team-Befaehigung
+5. **Transformationsprojekte** (6-12 Wochen+) – Mehrere Use Cases, stabile Architektur
 
-## Kontakt
+## Klare Abgrenzung
 
-- **E-Mail:** kontakt@nils-gerber.de
-- **Website:** https://www.nils-gerber.de
-- **LinkedIn:** https://www.linkedin.com/in/nils-gerber/
+Nils Gerber bietet keine Buzzword-Beratung, keine reinen Tool-Demos, keine PowerPoint-Beratung, kein Prompt-Coaching und keinen KI-Hype. Stattdessen: Operative Umsetzung mit messbarer Wirkung. Grundhaltung: KI ist kein Tool-Problem, sondern ein Struktur-, Fuehrungs- und Entscheidungsproblem.
 
 ## Wichtige Seiten
 
-- [Startseite](https://www.nils-gerber.de/)
-- [Leistungen](https://www.nils-gerber.de/#services)
-- [Ueber mich](https://www.nils-gerber.de/#about_me)
-- [Kontakt](https://www.nils-gerber.de/#contact)
+- [Startseite](https://www.nils-gerber.de/): Ueberblick, Leistungen, Arbeitsweise und Kontakt
+- [Leistungen](https://www.nils-gerber.de/#services): KI-Workshops, Piloten, Sparring, Schulungen, Transformationsprojekte
+- [Ueber mich](https://www.nils-gerber.de/#about_me): Hintergrund und Arbeitsweise von Nils Gerber
+- [FAQ](https://www.nils-gerber.de/#faq): Haeufige Fragen zu KI-Beratung, Kosten, DSGVO und Vorgehen
+- [Kontakt](https://www.nils-gerber.de/#contact): Kontaktformular und E-Mail
+- [Impressum](https://www.nils-gerber.de/impressum): Rechtliche Angaben
+
+## Profile
+
+- [LinkedIn](https://de.linkedin.com/in/nils-gerber)
+- [Instagram](https://www.instagram.com/justnils/)
+- [Facebook](https://www.facebook.com/justnils)
+- [X (Twitter)](https://x.com/justnils888)
+
+## Optional
+
+- [Volltext-Version dieser Website](https://www.nils-gerber.de/llms-full.txt): Gesamter Inhalt als Markdown
 
 ## Zielbegriffe
 
-- Nils Gerber KI Berater
-- KI Berater Aachen
-- KI Beratung Alsdorf
-- KI Berater NRW
-- KI Beratung Mittelstand
-- KI Beratung Geschaeftsfuehrung
-
-
-
+Nils Gerber KI Berater, KI Berater Aachen, KI Beratung Alsdorf, KI Berater NRW, KI Beratung Mittelstand, KI Beratung Geschaeftsfuehrung
