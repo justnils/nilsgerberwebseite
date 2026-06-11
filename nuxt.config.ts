@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["nuxt-phosphor-icons", "@nuxtjs/google-fonts", "nuxt-swiper", "@vueuse/nuxt", "@vercel/speed-insights/nuxt"],
+  modules: ["nuxt-phosphor-icons", "@nuxtjs/google-fonts", "nuxt-swiper", "@vueuse/nuxt", "@vercel/speed-insights/nuxt", "@vercel/analytics/nuxt"],
   app: {
     head: {
       script: [
