@@ -82,8 +82,8 @@ onMounted(() => {
 
     <!-- Next Chapter -->
     <div class="col-12">
-      <a href="#faq" class="d-flex gap-4 align-items-center next-chapter">
-        <span class="page">08/09</span>
+      <a href="#projects" class="d-flex gap-4 align-items-center next-chapter">
+        <span class="page">08/10</span>
         <span class="next">Weiter</span>
         <PhosphorIconArrowElbowRightDown />
       </a>

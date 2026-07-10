@@ -48,7 +48,10 @@ const closeNav = () => {
         
         <!-- Über mich -->
         <AboutMeDetailed />
-        
+
+        <!-- Aktuelle Projekte -->
+        <CurrentProjects />
+
         <!-- FAQ -->
         <FAQ />
         

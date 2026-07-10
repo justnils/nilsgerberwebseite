@@ -66,7 +66,7 @@
     <!-- Next Chapter Link -->
     <div class="col-12">
       <a href="#audience" class="d-flex gap-4 align-items-center next-chapter">
-        <span class="page">02/09</span>
+        <span class="page">02/10</span>
         <span class="next">Weiter</span>
         <span class="icon">
           <PhosphorIconArrowElbowRightDown />

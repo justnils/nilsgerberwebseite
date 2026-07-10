@@ -112,7 +112,7 @@ const containerRef = ref(null);
     <!-- Next Chapter -->
     <div class="col-12">
       <a href="#how_i_work" class="d-flex gap-4 align-items-center next-chapter">
-        <span class="page">05/09</span>
+        <span class="page">05/10</span>
         <span class="next">Weiter</span>
         <PhosphorIconArrowElbowRightDown />
       </a>

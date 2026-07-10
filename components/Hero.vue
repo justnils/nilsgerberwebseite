@@ -13,7 +13,7 @@ onMounted(() => {
   gsap.from(".contact-btn", { duration: 1.2, scale: 0, opacity: 0, ease: "bounce" });
 
   const nameChars = new SplitType(".hero-name", { types: "chars" }).chars;
-  const descChars = new SplitType(".description", { types: "chars" }).chars;
+  const descChars = new SplitType(".hero .description", { types: "chars" }).chars;
 
   gsap.from(nameChars, { duration: 1.5, rotateX: 180, opacity: 0, ease: "bounce", stagger: 0.05 });
   gsap.from(descChars, { duration: 1, rotateY: 180, stagger: 0.05 });

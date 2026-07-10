@@ -50,8 +50,9 @@ const navItems = reactive([
   { index: "07", text: "prozess", href: "#how_i_work", active: false },
   { index: "08", text: "prinzipien", href: "#principles", active: false },
   { index: "09", text: "über mich", href: "#about_me", active: false },
-  { index: "10", text: "faq", href: "#faq", active: false },
-  { index: "11", text: "kontakt", href: "#contact", active: false },
+  { index: "10", text: "projekte", href: "#projects", active: false },
+  { index: "11", text: "faq", href: "#faq", active: false },
+  { index: "12", text: "kontakt", href: "#contact", active: false },
 ]);
 </script>
 
