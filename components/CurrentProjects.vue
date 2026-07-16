@@ -1,77 +1,11 @@
 <script lang="ts" setup>
+defineProps<{}>()
 </script>
 
 <template>
   <section id="projects" class="current-projects section position-relative">
-    <SectionOverlayText text="projekte" />
-    <SectionTitle subtitle="Woran ich gerade baue" title="Aktuelle Projekte" />
-
-    <div class="showcase-wrap">
-      <article class="showcase-card">
-        <div class="row g-0 flex-column-reverse flex-lg-row">
-          <!-- Inhalt -->
-          <div class="col-lg-6 showcase-content">
-            <div class="brand-row d-flex flex-wrap align-items-center gap-3">
-              <span class="brand">justpool.ai</span>
-              <span class="status-badge">
-                <span class="dot" aria-hidden="true"></span>
-                in Gründung · Launch 2027
-              </span>
-            </div>
-
-            <h3 class="claim">
-              Der KI-Coach für deinen
-              <span class="wave-word">
-                Pool.
-                <svg class="wave" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true">
-                  <path d="M0 6 Q 15 0, 30 6 T 60 6 T 90 6 T 120 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-                </svg>
-              </span>
-            </h3>
-
-            <p class="showcase-description">
-              Teststreifen eintauchen, mit der App scannen – und justpool sagt dir aufs Gramm genau,
-              was in deinen Pool muss. Dazu: Preisvergleich über 100 Shops und eine Abo-Box,
-              die die Poolsaison auf Autopilot stellt.
-            </p>
-
-            <div class="tags d-flex flex-wrap gap-2">
-              <span>KI-App</span>
-              <span>Teststreifen</span>
-              <span>Abo-Box</span>
-              <span>Preisvergleich</span>
-            </div>
-
-            <div class="cta-row d-flex flex-wrap align-items-center gap-3 gap-xl-4">
-              <a href="https://www.just-pool.de" target="_blank" rel="noopener" class="cta-primary">
-                just-pool.de ansehen →
-              </a>
-              <a href="https://www.just-pool.de/investoren" target="_blank" rel="noopener" class="cta-secondary">
-                Founders Circle für Investoren →
-              </a>
-            </div>
-          </div>
-
-          <!-- Visual -->
-          <div class="col-lg-6 showcase-visual">
-            <img
-              src="/images/projects/poster.webp"
-              alt="justpool – ein Teststreifen wird in einen Aufstellpool getaucht, daneben ein Smartphone mit der App"
-              loading="lazy"
-            />
-            <div class="visual-overlay" aria-hidden="true"></div>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <!-- Next Chapter -->
-    <div class="col-12">
-      <a href="#faq" class="d-flex gap-4 align-items-center next-chapter">
-        <span class="page">09/10</span>
-        <span class="next">Weiter ↙</span>
-      </a>
-    </div>
+    <h2>Aktuelle Projekte</h2>
+    <p>justpool.ai – Der KI-Coach für deinen Pool</p>
   </section>
 </template>
 
