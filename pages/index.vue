@@ -50,7 +50,10 @@ const closeNav = () => {
         <AboutMeDetailed />
 
         <!-- Aktuelle Projekte -->
-        <CurrentProjects />
+        <section id="projects" class="section">
+          <h2>Aktuelle Projekte</h2>
+          <p>justpool.ai</p>
+        </section>
 
         <!-- FAQ -->
         <FAQ />
