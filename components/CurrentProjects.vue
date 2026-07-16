@@ -1,26 +1,4 @@
 <script lang="ts" setup>
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { onMounted, onBeforeUnmount } from "vue";
-
-gsap.registerPlugin(ScrollTrigger);
-
-if (process.client) {
-  onMounted(() => {
-    const anim = gsap.from(".showcase-wrap", {
-      opacity: 0,
-      y: 40,
-      duration: 0.8,
-      scrollTrigger: {
-        trigger: ".current-projects",
-        start: "top 70%",
-      },
-    });
-    onBeforeUnmount(() => {
-      anim.kill();
-    });
-  });
-}
 </script>
 
 <template>
