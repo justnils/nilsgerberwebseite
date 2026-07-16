@@ -44,12 +44,10 @@
 
             <div class="cta-row d-flex flex-wrap align-items-center gap-3 gap-xl-4">
               <a href="https://www.just-pool.de" target="_blank" rel="noopener" class="cta-primary">
-                just-pool.de ansehen
-                <PhosphorIconArrowUpRight :size="20" />
+                just-pool.de ansehen →
               </a>
               <a href="https://www.just-pool.de/investoren" target="_blank" rel="noopener" class="cta-secondary">
-                Founders Circle für Investoren
-                <PhosphorIconArrowRight :size="18" />
+                Founders Circle für Investoren →
               </a>
             </div>
           </div>
@@ -71,8 +69,7 @@
     <div class="col-12">
       <a href="#faq" class="d-flex gap-4 align-items-center next-chapter">
         <span class="page">09/10</span>
-        <span class="next">Weiter</span>
-        <PhosphorIconArrowElbowRightDown />
+        <span class="next">Weiter ↙</span>
       </a>
     </div>
   </section>
