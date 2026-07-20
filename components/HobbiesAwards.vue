@@ -156,7 +156,7 @@ onMounted(() => {
   }
   
   // CSS-Grid statt Bootstrap-Row: grid-auto-rows 1fr macht ALLE Karten
-  // gleich hoch, auch ueber mehrere Zeilen hinweg
+  // gleich hoch, auch über mehrere Zeilen hinweg
   .cards-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -186,7 +186,7 @@ onMounted(() => {
       flex-direction: column;
       width: 100%;
 
-      // Bild immer buendig am unteren Kartenrand, damit alle Karten gleich wirken
+      // Bild immer bündig am unteren Kartenrand, damit alle Karten gleich wirken
       .award-image-wrapper,
       .hobby-image-wrapper {
         margin-top: auto !important;

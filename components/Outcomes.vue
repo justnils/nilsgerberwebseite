@@ -6,20 +6,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const outcomes = ref([
   {
-    title: "KI-Agenten, die eigenstaendig arbeiten",
-    desc: "Autonome Systeme, die komplexe Aufgaben ohne staendige Anleitung erledigen – von Recherche bis Berichterstellung."
+    title: "KI-Agenten, die eigenständig arbeiten",
+    desc: "Autonome Systeme, die komplexe Aufgaben ohne ständige Anleitung erledigen – von Recherche bis Berichterstellung."
   },
   {
     title: "Chatbots, die wirklich verstehen",
-    desc: "Interne Assistenten, die auf euer Firmenwissen zugreifen und praezise Antworten liefern – keine generischen Floskeln."
+    desc: "Interne Assistenten, die auf euer Firmenwissen zugreifen und präzise Antworten liefern – keine generischen Floskeln."
   },
   {
     title: "Automatische Dokumentenanalyse in Sekunden",
-    desc: "Vertraege, PDFs, E-Mails – KI extrahiert relevante Infos, fasst zusammen und kategorisiert automatisch."
+    desc: "Verträge, PDFs, E-Mails – KI extrahiert relevante Infos, fasst zusammen und kategorisiert automatisch."
   },
   {
-    title: "RAG-Systeme fuer euer Unternehmenswissen",
-    desc: "Eure Dokumente, FAQs und Wikis werden durchsuchbar – mit praezisen, quellenbasierten Antworten."
+    title: "RAG-Systeme für euer Unternehmenswissen",
+    desc: "Eure Dokumente, FAQs und Wikis werden durchsuchbar – mit präzisen, quellenbasierten Antworten."
   },
   {
     title: "Workflow-Automatisierung mit LLMs",
@@ -31,7 +31,7 @@ const outcomes = ref([
   },
   {
     title: "Personalisierte Kommunikation in Echtzeit",
-    desc: "Individuelle E-Mails, Angebote und Antworten – automatisch generiert, trotzdem persoenlich."
+    desc: "Individuelle E-Mails, Angebote und Antworten – automatisch generiert, trotzdem persönlich."
   },
 ]);
 
@@ -58,7 +58,7 @@ onMounted(() => {
     <SectionTitle subtitle="Was du mit mir erreichst" title="Typische Outcomes, die realistisch erreichbar sind." />
 
     <p class="outcomes-intro mb-5">
-      Das ist heute mit KI moeglich – und ich helfe dir, es umzusetzen:
+      Das ist heute mit KI möglich – und ich helfe dir, es umzusetzen:
     </p>
 
     <div class="outcomes-grid">
@@ -66,7 +66,7 @@ onMounted(() => {
         <div class="outcome-icon">
           <PhosphorIconRocket :size="28" weight="duotone" v-if="index === 0" />
           <PhosphorIconChatCircleText :size="28" weight="duotone" v-else-if="index === 1" />
-          <PhosphorIconFileSearch :size="28" weight="duotone" v-else-if="index === 2" />
+          <PhosphorIconFileMagnifyingGlass :size="28" weight="duotone" v-else-if="index === 2" />
           <PhosphorIconDatabase :size="28" weight="duotone" v-else-if="index === 3" />
           <PhosphorIconGear :size="28" weight="duotone" v-else-if="index === 4" />
           <PhosphorIconCode :size="28" weight="duotone" v-else-if="index === 5" />

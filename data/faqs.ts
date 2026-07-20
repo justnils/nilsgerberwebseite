@@ -10,7 +10,7 @@ export const faqs = [
   },
   {
     question: "Was ist der Unterschied zwischen KI-Beratung und klassischer IT-Beratung?",
-    answer: "KI-Beratung fokussiert sich auf den Einsatz von Machine Learning, Large Language Models und intelligenter Automatisierung. Es geht nicht nur um Technik, sondern auch um Datenqualitaet, Change Management und den sinnvollen Einsatz von KI – nicht um Hype.",
+    answer: "KI-Beratung fokussiert sich auf den Einsatz von Machine Learning, Large Language Models und intelligenter Automatisierung. Es geht nicht nur um Technik, sondern auch um Datenqualität, Change Management und den sinnvollen Einsatz von KI – nicht um Hype.",
   },
   {
     question: "Wie starten wir, wenn wir noch keine Use Cases haben?",
@@ -18,22 +18,22 @@ export const faqs = [
   },
   {
     question: "Was kostet KI-Beratung?",
-    answer: "Das haengt vom Umfang ab. Ein Kickstart-Workshop ist ein ueberschaubares Investment, ein Transformationsprojekt entsprechend mehr. Wichtig: Der ROI sollte klar sein, bevor wir starten. Im Erstgespraech klaeren wir, ob und wie eine Zusammenarbeit sinnvoll ist – kostenfrei.",
+    answer: "Das hängt vom Umfang ab. Ein Kickstart-Workshop ist ein überschaubares Investment, ein Transformationsprojekt entsprechend mehr. Wichtig: Der ROI sollte klar sein, bevor wir starten. Im Erstgespräch klären wir, ob und wie eine Zusammenarbeit sinnvoll ist – kostenfrei.",
   },
   {
-    question: "Ist KI-Beratung auch fuer den Mittelstand geeignet?",
-    answer: "Ja, besonders. Der Mittelstand kann mit fokussierten KI-Projekten schnell Wirkung erzielen – ohne eigene AI-Abteilung. Entscheidend ist nicht die Groesse, sondern der Wille, Dinge sauber umzusetzen und zu nutzen.",
+    question: "Ist KI-Beratung auch für den Mittelstand geeignet?",
+    answer: "Ja, besonders. Der Mittelstand kann mit fokussierten KI-Projekten schnell Wirkung erzielen – ohne eigene AI-Abteilung. Entscheidend ist nicht die Größe, sondern der Wille, Dinge sauber umzusetzen und zu nutzen.",
   },
   {
     question: "Geht das DSGVO-konform?",
-    answer: "Ja. Nils Gerber arbeitet ausschliesslich mit datenschutzkonformen Loesungen. Zugriff, Datenfluesse, Logging und Grenzen werden von Anfang an sauber definiert. Europaeische Cloud-Anbieter und lokale Modelle sind moeglich.",
+    answer: "Ja. Nils Gerber arbeitet ausschließlich mit datenschutzkonformen Lösungen. Zugriff, Datenflüsse, Logging und Grenzen werden von Anfang an sauber definiert. Europäische Cloud-Anbieter und lokale Modelle sind möglich.",
   },
   {
     question: "Wo bietet Nils Gerber KI-Beratung an?",
-    answer: "Nils Gerber ist KI-Berater in Alsdorf bei Aachen und arbeitet mit Unternehmen in Aachen, Koeln, Duesseldorf, ganz NRW und deutschlandweit (remote). Vor-Ort-Termine und Remote-Zusammenarbeit sind flexibel kombinierbar.",
+    answer: "Nils Gerber ist KI-Berater in Alsdorf bei Aachen und arbeitet mit Unternehmen in Aachen, Köln, Düsseldorf, ganz NRW und deutschlandweit (remote). Vor-Ort-Termine und Remote-Zusammenarbeit sind flexibel kombinierbar.",
   },
   {
     question: "Was sind LLMs, RAG und KI-Agenten?",
-    answer: "LLMs (Large Language Models) sind Sprachmodelle wie GPT-4 oder Claude. RAG (Retrieval Augmented Generation) kombiniert LLMs mit Unternehmenswissen fuer praezise Antworten. KI-Agenten sind autonome Systeme, die Aufgaben eigenstaendig bearbeiten. Nils Gerber hilft bei allen drei Bereichen.",
+    answer: "LLMs (Large Language Models) sind Sprachmodelle wie GPT-4 oder Claude. RAG (Retrieval Augmented Generation) kombiniert LLMs mit Unternehmenswissen für präzise Antworten. KI-Agenten sind autonome Systeme, die Aufgaben eigenständig bearbeiten. Nils Gerber hilft bei allen drei Bereichen.",
   },
 ];

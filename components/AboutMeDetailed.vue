@@ -43,11 +43,11 @@ onMounted(() => {
           <h4 class="mb-3">Kurzprofil:</h4>
           <p class="profile-text">
             <strong>Standort:</strong> Alsdorf bei Aachen, Nordrhein-Westfalen. 
-            KI-Berater fuer die Region Aachen, Koeln, Duesseldorf und deutschlandweit.
+            KI-Berater für die Region Aachen, Köln, Düsseldorf und deutschlandweit.
           </p>
           <p class="profile-text mt-2">
-            Assistent der Geschaeftsfuehrung bei INDU-ELECTRIC Gerber GmbH, spaeter Beratung im Datenumfeld, 
-            danach Gruender bei crop.zone GmbH. Heute Head of AI bei INFORM DataLab. 
+            Assistent der Geschäftsführung bei INDU-ELECTRIC Gerber GmbH, später Beratung im Datenumfeld,
+            danach Gründer bei crop.zone GmbH. Heute Head of AI bei INFORM DataLab.
             Ich bringe Tempo, Struktur und Umsetzungsfokus zusammen.
           </p>
         </div>
@@ -66,7 +66,7 @@ onMounted(() => {
         <div class="about-keywords mt-4 d-flex flex-wrap gap-2">
           <span class="keyword-tag">Head of AI</span>
           <span class="keyword-tag">INFORM DataLab</span>
-          <span class="keyword-tag">Startup-Gruender</span>
+          <span class="keyword-tag">Startup-Gründer</span>
           <span class="keyword-tag">KI-Transformation</span>
           <span class="keyword-tag">KI Berater Aachen</span>
           <span class="keyword-tag">KI Beratung NRW</span>

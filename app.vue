@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { faqs } from "~/data/faqs";
 
-// Person Schema (JSON-LD) fuer Knowledge Graph und KI-Systeme
+// Person Schema (JSON-LD) für Knowledge Graph und KI-Systeme
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -25,7 +25,7 @@ const personSchema = {
   "alumniOf": {
     "@type": "Organization",
     "name": "CROP.ZONE",
-    "description": "AgrarTech-Startup aus Aachen, mitgegruendet von Nils Gerber als CIO"
+    "description": "AgrarTech-Startup aus Aachen, mitgegründet von Nils Gerber als CIO"
   },
   "address": {
     "@type": "PostalAddress",
@@ -44,21 +44,21 @@ const personSchema = {
   "areaServed": [
     "Alsdorf",
     "Aachen",
-    "Koeln",
-    "Duesseldorf",
+    "Köln",
+    "Düsseldorf",
     "Nordrhein-Westfalen",
     "Deutschland"
   ]
 };
 
-// WebSite Schema fuer Suchmaschinen und KI-Systeme
+// WebSite Schema für Suchmaschinen und KI-Systeme
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Nils Gerber – KI-Berater",
   "url": "https://www.nils-gerber.de",
   "inLanguage": "de",
-  "description": "KI-Beratung fuer Mittelstand, Geschaeftsfuehrung und Kommunen in NRW und deutschlandweit. LLMs, RAG-Systeme, KI-Agenten.",
+  "description": "KI-Beratung für Mittelstand, Geschäftsführung und Kommunen in NRW und deutschlandweit. LLMs, RAG-Systeme, KI-Agenten.",
   "publisher": {
     "@type": "Person",
     "name": "Nils Gerber"
@@ -79,21 +79,21 @@ const serviceSchema = {
     "addressRegion": "Nordrhein-Westfalen",
     "addressCountry": "DE"
   },
-  "areaServed": ["Aachen", "Koeln", "Duesseldorf", "Nordrhein-Westfalen", "Deutschland"],
+  "areaServed": ["Aachen", "Köln", "Düsseldorf", "Nordrhein-Westfalen", "Deutschland"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "KI-Beratungsleistungen",
     "itemListElement": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "KI-Kickstart Workshop", "description": "1 Tag: Priorisierte Use Cases, klare Roadmap, realistische Umsetzungsschritte." } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Proof of Concept / Pilot", "description": "2-4 Wochen: Ein konkreter Use Case als funktionierender Pilot, inklusive Bewertung, Risiken und Daten-Check." } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sparring", "description": "Monatlich: Schnellere Entscheidungen, klare Prioritaeten, weniger Tool-Chaos." } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enablement und Schulungen", "description": "Nach Bedarf: Team-Befaehigung fuer sauberes Arbeiten mit KI." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sparring", "description": "Monatlich: Schnellere Entscheidungen, klare Prioritäten, weniger Tool-Chaos." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enablement und Schulungen", "description": "Nach Bedarf: Team-Befähigung für sauberes Arbeiten mit KI." } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transformationsprojekte", "description": "6-12 Wochen+: Mehrere Use Cases, stabile Architektur, Governance, Rollout und Betrieb." } }
     ]
   }
 };
 
-// FAQPage Schema: serverseitig gerendert, damit AI-Crawler (ohne JS) es lesen koennen
+// FAQPage Schema: serverseitig gerendert, damit AI-Crawler (ohne JS) es lesen können
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -115,11 +115,11 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Nils Gerber ist KI-Berater aus Alsdorf bei Aachen. KI Beratung fuer Mittelstand und Geschaeftsfuehrung in NRW. Schwerpunkte: LLMs, RAG, KI-Agenten. Operative Umsetzung statt Buzzword-Beratung.",
+      content: "Nils Gerber ist KI-Berater aus Alsdorf bei Aachen. KI Beratung für Mittelstand und Geschäftsführung in NRW. Schwerpunkte: LLMs, RAG, KI-Agenten. Operative Umsetzung statt Buzzword-Beratung.",
     },
     {
       name: "keywords",
-      content: "Nils Gerber KI Berater, KI Berater Aachen, KI Beratung NRW, KI Beratung Mittelstand, KI Beratung Geschaeftsfuehrung, Head of AI, LLM Beratung, RAG Systeme, KI-Agenten, KI-Transformation, INFORM DataLab",
+      content: "Nils Gerber KI Berater, KI Berater Aachen, KI Beratung NRW, KI Beratung Mittelstand, KI Beratung Geschäftsführung, Head of AI, LLM Beratung, RAG Systeme, KI-Agenten, KI-Transformation, INFORM DataLab",
     },
     {
       name: "author",
@@ -139,7 +139,7 @@ useHead({
     },
     {
       property: "og:description",
-      content: "KI-Berater aus Alsdorf bei Aachen. KI Beratung fuer Mittelstand und Geschaeftsfuehrung in NRW. LLMs, RAG, KI-Agenten. Operative Umsetzung statt Buzzword-Beratung.",
+      content: "KI-Berater aus Alsdorf bei Aachen. KI Beratung für Mittelstand und Geschäftsführung in NRW. LLMs, RAG, KI-Agenten. Operative Umsetzung statt Buzzword-Beratung.",
     },
     {
       property: "og:image",
@@ -167,7 +167,7 @@ useHead({
     },
     {
       name: "twitter:description",
-      content: "KI-Berater aus Alsdorf bei Aachen. Operative KI-Umsetzung fuer Mittelstand und Geschaeftsfuehrung.",
+      content: "KI-Berater aus Alsdorf bei Aachen. Operative KI-Umsetzung für Mittelstand und Geschäftsführung.",
     },
     {
       name: "twitter:image",

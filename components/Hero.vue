@@ -32,7 +32,7 @@ onMounted(() => {
           <p class="location">Alsdorf bei Aachen, NRW</p>
         </div>
 
-        <!-- Quick-Answer-Block fuer KI-Systeme (GEO) -->
+        <!-- Quick-Answer-Block für KI-Systeme (GEO) -->
         <p class="quick-answer">
           Nils Gerber ist KI-Berater und Head of AI aus Alsdorf bei Aachen. 
           Er hilft Unternehmen und Kommunen in NRW und deutschlandweit, KI pragmatisch und sicher produktiv zu machen. 
