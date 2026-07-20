@@ -12,6 +12,9 @@ const navRef = ref<HTMLElement | null>(null);
 
 // Watch and handle class changes
 onMounted(() => {
+  const cancelShuffle = new WeakMap<HTMLElement, () => void>();
+  const pendingShuffle = new WeakMap<HTMLElement, ReturnType<typeof setTimeout>>();
+
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
       if (mutation.type === "attributes" && mutation.attributeName === "class") {
@@ -19,9 +22,23 @@ onMounted(() => {
         if (target.classList.contains("active")) {
           const textElement = target.querySelector(".text") as HTMLElement | null;
           if (textElement) {
-            setTimeout(() => {
-              shuffleLetters(textElement, { iterations: 5 });
-            }, 100);
+            // Originaltext sichern und laufende Animation abbrechen: sonst liest
+            // ein erneuter Shuffle den halb verwürfelten DOM-Text als Vorlage
+            // und der Menüpunkt bleibt dauerhaft verstümmelt
+            if (!textElement.dataset.text) {
+              textElement.dataset.text = textElement.textContent ?? "";
+            }
+            clearTimeout(pendingShuffle.get(textElement));
+            pendingShuffle.set(
+              textElement,
+              setTimeout(() => {
+                cancelShuffle.get(textElement)?.();
+                cancelShuffle.set(
+                  textElement,
+                  shuffleLetters(textElement, { text: textElement.dataset.text, iterations: 5 })
+                );
+              }, 100)
+            );
           }
         }
       }
