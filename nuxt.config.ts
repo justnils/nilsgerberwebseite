@@ -15,6 +15,11 @@ export default defineNuxtConfig({
     },
   },
   // ssr: false,
+  routeRules: {
+    // Serverseitiger 302-Redirect (kein JS nötig, kein dauerhaftes Browser-Caching wie bei 301)
+    "/quiz": { redirect: { to: "https://ce2026-quiz.vercel.app", statusCode: 302 } },
+    "/quiz/": { redirect: { to: "https://ce2026-quiz.vercel.app", statusCode: 302 } },
+  },
   css: ["@/public/scss/styles.scss"],
   googleFonts: {
     families: {
