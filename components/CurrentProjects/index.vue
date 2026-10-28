@@ -101,6 +101,17 @@
           </div>
         </div>
       </article>
+
+      <aside class="nda-note">
+        <PhosphorIconLockSimple :size="22" aria-hidden="true" />
+        <p>
+          <strong>Warum hier nur ein Projekt steht:</strong>
+          Die meisten meiner Projekte für Unternehmen laufen unter NDA. Darüber darf ich nichts erzählen,
+          auch wenn ich es gern würde – umso schöner, dass das Alsdorf-Projekt öffentlich ist.
+          Wenn dich interessiert, was in deinem Umfeld möglich ist:
+          <a href="#contact">einfach fragen</a>.
+        </p>
+      </aside>
     </div>
 
     <!-- Private Projekte -->
@@ -442,6 +453,48 @@
         font-size: 15px;
         line-height: 1.5;
         color: rgb(var(--black));
+      }
+    }
+  }
+
+  // Dezenter NDA-Hinweis unter der geschäftlichen Karte
+  .nda-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 760px;
+    margin-top: 20px;
+    padding: 14px 18px;
+    border-left: 2px solid rgba(var(--black), 0.35);
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 0 12px 12px 0;
+
+    > svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+      opacity: 0.7;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.65;
+      color: rgba(var(--black), 0.85);
+      @media (min-width: 1200px) {
+        font-size: 15px;
+      }
+    }
+
+    a {
+      color: rgb(var(--black));
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: rgba(var(--black), 0.4);
+      transition-duration: 300ms;
+
+      &:hover {
+        text-decoration-color: rgb(var(--black));
       }
     }
   }
