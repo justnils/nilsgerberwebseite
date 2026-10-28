@@ -50,6 +50,7 @@ const handleSubmit = async () => {
         company: formData.value.company,
         email: formData.value.email,
         message: formData.value.message,
+        captcha: captchaAnswer.value,
       },
     });
     
@@ -61,7 +62,8 @@ const handleSubmit = async () => {
   } catch (error: any) {
     console.log("FAILED...", error);
     submitBtn.value = "Fehler!";
-    submitError.value = "Fehler beim Senden. Bitte versuche es erneut oder schreibe direkt an kontakt@nils-gerber.de";
+    submitError.value =
+      error?.data?.message || "Fehler beim Senden. Bitte versuche es erneut oder schreibe direkt an kontakt@nils-gerber.de";
     setTimeout(() => {
       submitBtn.value = "Senden";
     }, 3000);

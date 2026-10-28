@@ -32,12 +32,10 @@ export default defineNuxtConfig({
     modules: ['navigation', 'pagination', 'autoplay', 'scrollbar']
   },
   runtimeConfig: {
-    // Server-only (private) - Brevo API Key
-    brevoApiKey: process.env.BREVO_API_KEY,
-    public: {
-      PUBLIC_KEY: process.env.NUXT_PUBLIC_KEY,
-      SERVICE_ID: process.env.NUXT_SERVICE_ID,
-      TEMPLATE_ID: process.env.NUXT_TEMPLATE_ID
-    }
-  }
+    // Server-only (private) - Brevo API Key.
+    // Bewusst leer: wird zur Laufzeit über NUXT_BREVO_API_KEY (Nuxt-Konvention)
+    // oder BREVO_API_KEY (siehe server/api/contact.post.ts) gesetzt und landet
+    // so nicht beim Build im Server-Bundle.
+    brevoApiKey: "",
+  },
 });
